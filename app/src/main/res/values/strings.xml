@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Business Card App</string>
+    <string name="android_logo_text">Android logo</string>
+    <string name="android_developer_artisan_text">Android Developer Artisan</string>
+    <string name="phone_number_text">Phone number</string>
+    <string name="x_or_twitter_text">X or Twitter</string>
+    <string name="email_text">email</string>
+    <string name="email_value_text">markponce07@gmail.com</string>
+    <string name="x_value_text">\@markponce07</string>
+    <string name="phone_number_value_text">+63 926 570 8010</string>
+    <string name="name_value_text">Mark Anthony Ponce</string>
 </resources>

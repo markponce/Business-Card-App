@@ -9,16 +9,11 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentSize
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Call
 import androidx.compose.material.icons.filled.Email
@@ -33,6 +28,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -70,20 +66,20 @@ fun BusinessCardApp(modifier: Modifier = Modifier) {
         ) {
             Image(
                 painter = painterResource(R.drawable.android_logo),
-                contentDescription = "Android logo",
+                contentDescription = stringResource(R.string.android_logo_text),
                 contentScale = ContentScale.Fit,
                 modifier = Modifier
                     .size(height = 120.dp, width = 110.dp)
                     .background(Color("#063042".toColorInt()))
             )
             Text(
-                "Mark Anthony Ponce",
+                stringResource(R.string.name_value_text),
                 fontSize = 38.sp,
                 fontWeight = FontWeight.Light,
                 lineHeight = 70.sp
             )
             Text(
-                "Android Developer Artisan",
+                stringResource(R.string.android_developer_artisan_text),
                 fontWeight = FontWeight.Bold,
                 color = Color("#016d3b".toColorInt())
             )
@@ -106,18 +102,18 @@ fun BusinessCardApp(modifier: Modifier = Modifier) {
             ) {
                 ContactDetail(
                     imageVector = Icons.Default.Call,
-                    contentDescription = "Phone number",
-                    text = "+63 926 570 8010"
+                    contentDescription = stringResource(R.string.phone_number_text),
+                    text = stringResource(R.string.phone_number_value_text)
                 )
                 ContactDetail(
                     imageVector = Icons.Default.Share,
-                    contentDescription = "X or Twitter",
-                    text = "@markponce07"
+                    contentDescription = stringResource(R.string.x_or_twitter_text),
+                    text = stringResource(R.string.x_value_text)
                 )
                 ContactDetail(
                     imageVector = Icons.Default.Email,
-                    contentDescription = "email",
-                    text = "markponce07@gmail.com"
+                    contentDescription = stringResource(R.string.email_text),
+                    text = stringResource(R.string.email_value_text)
                 )
             }
 
